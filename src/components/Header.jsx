@@ -14,6 +14,9 @@ export default function Header() {
 
   // Track which tab is active based on the URL hash (e.g., #about)
   const [activeHref, setActiveHref] = useState('#about');
+  
+  // Theme state management
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   // Initialize from the current hash and update on hash changes
   useEffect(() => {
@@ -29,6 +32,19 @@ export default function Header() {
   // Click handler keeps state in sync immediately on click
   const handleClick = (href) => {
     setActiveHref(href);
+  };
+
+  // Theme toggle handler
+  const handleThemeToggle = () => {
+    const newTheme = !isDarkTheme;
+    setIsDarkTheme(newTheme);
+    
+    // Apply theme to document body
+    if (newTheme) {
+      document.body.classList.add('light-theme');
+    } else {
+      document.body.classList.remove('light-theme');
+    }
   };
 
   return (
@@ -61,8 +77,21 @@ export default function Header() {
           })}
         </ul>
 
-        {/* Right: social icons */}
+        {/* Right: theme toggle and social icons */}
         <div className="social" aria-label="Social links">
+          {/* Theme toggle button */}
+          <button
+            className="theme-toggle"
+            onClick={handleThemeToggle}
+            aria-label={isDarkTheme ? 'Switch to light theme' : 'Switch to dark theme'}
+            title={isDarkTheme ? 'Switch to light theme' : 'Switch to dark theme'}
+          >
+            <img 
+              src="/icons/dark.svg" 
+              alt="toggle theme"
+            />
+          </button>
+          
           <a
             className="icon-link"
             href="https://github.com/calebpham"

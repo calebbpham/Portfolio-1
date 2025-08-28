@@ -8,9 +8,9 @@
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  background: #ffffff;
+  background: var(--bg-primary);
   padding: 0;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background-color 0.3s ease;
 }
 
 .project-card:hover {
@@ -18,26 +18,29 @@
 }
 
 .project-button {
-  border: 1px solid rgba(0, 0, 0);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   background: none;
   padding: 0;
   cursor: pointer;
-  }
+  transition: border-color 0.3s ease;
+}
   
 .project-image {
   display: block;
   height: 220px;
   background-size: cover;
   background-position: center;
-  border: 1px solid rgba(0, 0, 0);
+  border: 1px solid var(--border-color);
   margin: 5px;
+  transition: border-color 0.3s ease;
 }
 
 .project-name {
   padding: 10px;
   font-size: 16px;
-  color: #000000;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
   
   
