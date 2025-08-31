@@ -6,13 +6,17 @@
   display: flex;
   justify-content: center;
   gap: 50px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .left-profile-image {
-  border: 1px solid rgba(0, 0, 0);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   background: none;
   padding: 0;
+  transition: border-color 0.3s ease;
 }
 
 img[alt="Profile"]{
@@ -21,8 +25,9 @@ img[alt="Profile"]{
   width: 395px;
   background-size: cover;
   background-position: center;
-  border: 1px solid rgba(0, 0, 0);
+  border: 1px solid var(--border-color);
   margin: 5px;
+  transition: border-color 0.3s ease;
 }
 
 .right-info {
@@ -30,9 +35,10 @@ img[alt="Profile"]{
 }
 
 .my-name, .my-info {
-  border: 1px solid rgba(0, 0, 0);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 5px;
+  transition: border-color 0.3s ease;
 }
 
 .my-name {
@@ -40,9 +46,10 @@ img[alt="Profile"]{
 }
 
 h2, p {
-  border: 1px solid rgba(0, 0, 0);
+  border: 1px solid var(--border-color);
   padding: 5px;
   margin: 0px;
+  transition: border-color 0.3s ease;
 }
 
 /* Mobile responsive: stack layout for mobile devices */
