@@ -29,6 +29,12 @@ export default function Header() {
     return () => window.removeEventListener('hashchange', applyHash);
   }, []);
 
+  // Initialize theme on component mount
+  useEffect(() => {
+    // Ensure we start with light theme (remove any existing dark-theme class)
+    document.body.classList.remove('dark-theme');
+  }, []);
+
   // Click handler keeps state in sync immediately on click
   const handleClick = (href) => {
     setActiveHref(href);

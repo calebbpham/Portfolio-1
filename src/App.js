@@ -10,6 +10,12 @@ function App() {
   // Track current hash to determine which page to show
   const [currentHash, setCurrentHash] = useState(window.location.hash || '#about');
   
+  // Initialize theme on app load
+  useEffect(() => {
+    // Ensure we start with light theme (remove any existing dark-theme class)
+    document.body.classList.remove('dark-theme');
+  }, []);
+  
   // Listen for hash changes and update state
   useEffect(() => {
     const handleHashChange = () => {
