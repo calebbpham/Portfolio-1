@@ -154,14 +154,14 @@ img {
 }
 
 /* Theme-aware icon colors */
-body.light-theme .icon-link img,
-body.light-theme .theme-toggle img {
-  filter: brightness(0) invert(0); /* Makes icons black on white theme */
+body.dark-theme .icon-link img,
+body.dark-theme .theme-toggle img {
+  filter: brightness(0) invert(1); /* Makes icons white on dark theme */
 }
 
-body:not(.light-theme) .icon-link img,
-body:not(.light-theme) .theme-toggle img {
-  filter: brightness(0) invert(1); /* Makes icons white on black theme */
+body:not(.dark-theme) .icon-link img,
+body:not(.dark-theme) .theme-toggle img {
+  filter: brightness(0) invert(0); /* Makes icons black on light theme */
 }
 
 /* Mobile responsive: stack layout vertically while keeping exact tab design */

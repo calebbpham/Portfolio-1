@@ -41,9 +41,9 @@ export default function Header() {
     
     // Apply theme to document body
     if (newTheme) {
-      document.body.classList.add('light-theme');
+      document.body.classList.add('dark-theme');
     } else {
-      document.body.classList.remove('light-theme');
+      document.body.classList.remove('dark-theme');
     }
   };
 
@@ -53,7 +53,7 @@ export default function Header() {
       <div className="header-inner">
         {/* Left: your name/brand */}
         <div className="brand" aria-label="Site owner">
-          Caleb Pham
+          Caleb Pham - Portfolio
         </div>
 
         {/* Center: the tabs stay centered using flex columns (brand/social flex:1) */}
@@ -94,7 +94,7 @@ export default function Header() {
           
           <a
             className="icon-link"
-            href="https://github.com/calebpham"
+            href="https://github.com/calebbpham"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

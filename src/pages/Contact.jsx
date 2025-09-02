@@ -106,7 +106,7 @@ export default function ContactPage() {
               value={formData.message}
               onChange={handleInputChange}
               required
-              placeholder="Enter your message here..."
+              placeholder="Enter your message here ..."
               rows="6"
             />
           </div>

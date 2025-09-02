@@ -1,27 +1,27 @@
 /* CSS Variables for theme switching */
 :root {
-  --bg-primary: #000000;
-  --bg-secondary: #111111;
-  --text-primary: #ffffff;
-  --text-secondary: #e5e7eb;
-  --border-color: #ffffff;
-  --header-bg: #000000;
-  --tab-bg: #000000;
-  --tab-text: #ffffff;
-  --tab-hover-bg: #111111;
-}
-
-/* Light theme variables */
-body.light-theme {
   --bg-primary: #ffffff;
   --bg-secondary: #f9fafb;
   --text-primary: #000000;
-  --text-secondary: #111827;
+  --text-secondary: #000000;
   --border-color: #000000;
   --header-bg: #ffffff;
   --tab-bg: #ffffff;
-  --tab-text: #1f2937;
+  --tab-text: #000000;
   --tab-hover-bg: #f9fafb;
+}
+
+/* Dark theme variables */
+body.dark-theme {
+  --bg-primary: #0F0F0F;
+  --bg-secondary: #0F0F0F;
+  --text-primary: #ffffff;
+  --text-secondary: #e5e7eb;
+  --border-color: #ffffff;
+  --header-bg: #0F0F0F;
+  --tab-bg: #0F0F0F;
+  --tab-text: #ffffff;
+  --tab-hover-bg: #0F0F0F;
 }
 
 /* Force theme on root element */
@@ -80,4 +80,34 @@ html, body {
   color: var(--text-secondary);
   line-height: 1.6;
   transition: color 0.3s ease;
+}
+
+/* Custom Scrollbar Styling - 1px black scrollbars */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 0px;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 transparent;
 }

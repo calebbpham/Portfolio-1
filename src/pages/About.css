@@ -21,8 +21,8 @@
 
 img[alt="Profile"]{
   display: block;
-  height: 595px;
-  width: 395px;
+  height: 400px;
+  width: 400px;
   background-size: cover;
   background-position: center;
   border: 1px solid var(--border-color);
