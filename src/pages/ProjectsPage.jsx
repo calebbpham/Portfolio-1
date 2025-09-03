@@ -23,7 +23,7 @@ export default function ProjectsPage() {
         'to reach out directly without leaving the site. Overall, the design highlights simplicity while ' +
         'keeping the spotlight on my work, ensuring both functionality and a professional aesthetic.',
       image: '/images/portfolio-pic.png',
-      link: '#',
+      link: 'https://calebpham.online',
       tech: ['React', 'CSS', 'JavaScript'],
       deployed: 'true'
     },
