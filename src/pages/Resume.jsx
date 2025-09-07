@@ -7,8 +7,8 @@ export default function ResumePage() {
   const handleDownload = () => {
     // Create a link to download the actual PDF file
     const link = document.createElement('a');
-    link.href = '/files/Caleb_Pham_Pre_Freshman_Resume.pdf';
-    link.download = 'Caleb_Pham_Resume.pdf';
+    link.href = '/files/Caleb_Pham_Sophmore_Resume.pdf';
+    link.download = 'Caleb_Pham_Sophmore_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -27,7 +27,7 @@ export default function ResumePage() {
           <div className="resume-content">
             {/* PDF Preview */}
             <iframe
-              src="/files/Caleb_Pham_Pre_Freshman_Resume.pdf"
+              src="/files/Caleb_Pham_Sophmore_Resume.pdf"
               className="pdf-preview"
               title="Resume Preview"
             />
