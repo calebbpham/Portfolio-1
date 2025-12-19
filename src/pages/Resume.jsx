@@ -27,7 +27,7 @@ export default function ResumePage() {
           <div className="resume-content">
             {/* PDF Preview */}
             <iframe
-              src="/files/Caleb_Pham_Sophmore_Resume.pdf"
+              src="/files/Caleb_Pham_Resume_2026.pdf"
               className="pdf-preview"
               title="Resume Preview"
             />
